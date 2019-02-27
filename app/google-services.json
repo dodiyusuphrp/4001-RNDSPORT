@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "33121822696",
+    "firebase_url": "https://rndsport-6edec.firebaseio.com",
+    "project_id": "rndsport-6edec",
+    "storage_bucket": "rndsport-6edec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33121822696:android:eeb4db0c368f2166",
+        "android_client_info": {
+          "package_name": "com.petrus.asus.sportrnd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33121822696-6j32sc75o2e1k9ohao15hh38avjr7uoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmT5z6QnVOYCprMePKjWUndN9YIUU4ApE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
