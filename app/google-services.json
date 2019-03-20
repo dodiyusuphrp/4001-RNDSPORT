@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "33121822696",
-    "firebase_url": "https://rndsport-6edec.firebaseio.com",
-    "project_id": "rndsport-6edec",
-    "storage_bucket": "rndsport-6edec.appspot.com"
+    "project_number": "295343184937",
+    "firebase_url": "https://rndsport-d206d.firebaseio.com",
+    "project_id": "rndsport-d206d",
+    "storage_bucket": "rndsport-d206d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:33121822696:android:eeb4db0c368f2166",
+        "mobilesdk_app_id": "1:295343184937:android:eeb4db0c368f2166",
         "android_client_info": {
           "package_name": "com.petrus.asus.sportrnd"
         }
       },
       "oauth_client": [
         {
-          "client_id": "33121822696-6j32sc75o2e1k9ohao15hh38avjr7uoe.apps.googleusercontent.com",
+          "client_id": "295343184937-3ckitmv4ta6afpg5092727sto6re4els.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.petrus.asus.sportrnd",
+            "certificate_hash": "0a53be0ca37e5998cefd46ee4116402a8ddebe66"
+          }
+        },
+        {
+          "client_id": "295343184937-v1hdtp72sekih0np2tprim6eoc8v7nj3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDmT5z6QnVOYCprMePKjWUndN9YIUU4ApE"
+          "current_key": "AIzaSyBuLDPIJlm5LSXGLhmjwVw3wvFXOe14CkU"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295343184937-v1hdtp72sekih0np2tprim6eoc8v7nj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
