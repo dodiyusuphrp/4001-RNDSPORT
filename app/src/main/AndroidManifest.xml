@@ -19,7 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity_daftar" />
-        <activity android:name=".activity_halamanutama"></activity>
+        <activity android:name=".activity_halamanutama" />
+        <activity android:name=".activity_help" />
+        <activity
+            android:name=".Aboutactivity"
+            android:label="About"></activity>
     </application>
 
 </manifest>
