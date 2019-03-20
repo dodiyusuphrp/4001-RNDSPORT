@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 ///////////////////////
 
 public class MainActivity extends AppCompatActivity {
+    public static final String MyPREFERENCES = "MyPrefs";
     private Button btnLogin;
     private EditText username;
     private EditText password;

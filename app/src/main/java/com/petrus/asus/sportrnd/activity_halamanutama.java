@@ -1,20 +1,43 @@
 package com.petrus.asus.sportrnd;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class activity_halamanutama extends AppCompatActivity {
+    Button bu=null;
+    Button bu2=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_halamanutama);
+
+        bu=(Button)findViewById(R.id.button2);
+        bu2=(Button)findViewById(R.id.button3);
     }
+
+    public  void logout(View view){
+        Intent intent = new Intent(this,  MainActivity.class);
+        startActivity(intent);
+        SharedPreferences sharedpreferences = getSharedPreferences(MainActivity.MyPREFERENCES, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+        editor.clear();
+        editor.commit();
+    }
+
+    public void close(View view){
+        finish();
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
