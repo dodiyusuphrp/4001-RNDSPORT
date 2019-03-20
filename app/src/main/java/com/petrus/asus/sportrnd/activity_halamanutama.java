@@ -24,7 +24,7 @@ public class activity_halamanutama extends AppCompatActivity {
         bu=(Button)findViewById(R.id.button2);
         bu2=(Button)findViewById(R.id.button3);
     }
-
+    //untuk logout//
     public  void logout(View view){
         Intent intent = new Intent(this,  MainActivity.class);
         startActivity(intent);
