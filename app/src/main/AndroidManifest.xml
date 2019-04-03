@@ -24,6 +24,7 @@
         <activity
             android:name=".Aboutactivity"
             android:label="About"></activity>
+        <activity android:name=".activity_lapangan" />
     </application>
 
 </manifest>

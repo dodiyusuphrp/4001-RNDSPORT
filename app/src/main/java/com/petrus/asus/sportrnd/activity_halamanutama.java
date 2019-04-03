@@ -62,4 +62,24 @@ public class activity_halamanutama extends AppCompatActivity {
 
         return true;
     }
+
+    public void pilihfootball(View view) {
+        Intent intent = new Intent(activity_halamanutama.this, activity_lapangan.class);
+        startActivity(intent);
+    }
+
+    public void pilihbasket(View view) {
+        Intent intent = new Intent(activity_halamanutama.this, activity_lapangan.class);
+        startActivity(intent);
+    }
+
+    public void pilihtennis(View view) {
+        Intent intent = new Intent(activity_halamanutama.this, activity_lapangan.class);
+        startActivity(intent);
+    }
+
+    public void pilihbdmntn(View view) {
+        Intent intent = new Intent(activity_halamanutama.this, activity_lapangan.class);
+        startActivity(intent);
+    }
 }

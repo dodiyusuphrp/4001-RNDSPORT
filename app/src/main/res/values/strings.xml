@@ -7,5 +7,9 @@
     <string name="tex">No HP : 081263533433</string>
     <string name="txt">Email : sportrnd@gmail.com</string>
     <string name="txt2">BANTUAN</string>
+    <string name="pilihfootball" />
+    <string name="pilihbasket" />
+    <string name="pilihtennis" />
+    <string name="pilihbadminton" />
 
 </resources>
