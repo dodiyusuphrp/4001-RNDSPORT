@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">RNDSPORT</string>
+    <string name="text1">RNDSPORT ini merupakan aplikasi berbasis android untuk membantu pelanggan untuk melakukan penyewaan lapangan olahraga dengan sistem booking.</string>
+    <string name="text2">Lapangan yang akan disewakan diantaranya, lapangan futsal, lapangan basket, lapangan tennis, dan lapangan badminton. Dan setiap pelanggan yang ingin melakukan booking harus melakukan H-1 sebelum jadwal yang diinginkan.</string>
+    <string name="text3">Layanan Member mendapatkan diskon sebesar 10% setiap melakukan transaksi booking lapangan.</string>
+    <string name="text">Kontak SPORTRND:</string>
+    <string name="tex">No HP : 081263533433</string>
+    <string name="txt">Email : sportrnd@gmail.com</string>
+    <string name="txt2">BANTUAN</string>
+
 </resources>
