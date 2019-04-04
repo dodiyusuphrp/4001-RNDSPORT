@@ -1,8 +1,8 @@
 package com.petrus.asus.sportrnd;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -71,4 +71,4 @@ public class activity_forgetpass extends AppCompatActivity {
     }
 
 }
-///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
