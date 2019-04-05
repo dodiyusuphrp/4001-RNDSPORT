@@ -46,7 +46,7 @@ public class activity_halamanutama extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.option_menu, menu);
         //getMenuInflater().inflate(R.menu.menu_main, menu);
-        //////////////////////////////
+        ///////////////////////////////
         return true;
 
     }
@@ -63,7 +63,7 @@ public class activity_halamanutama extends AppCompatActivity {
         return true;
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////
+    /////menu dasboard/////
     public void pilihfootball(View view) {
         Intent intent = new Intent(activity_halamanutama.this, activity_lapangan.class);
         startActivity(intent);
