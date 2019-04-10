@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "295343184937",
+    "firebase_url": "https://rndsport-d206d.firebaseio.com",
+    "project_id": "rndsport-d206d",
+    "storage_bucket": "rndsport-d206d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295343184937:android:eeb4db0c368f2166",
+        "android_client_info": {
+          "package_name": "com.petrus.asus.sportrnd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295343184937-3ckitmv4ta6afpg5092727sto6re4els.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.petrus.asus.sportrnd",
+            "certificate_hash": "0a53be0ca37e5998cefd46ee4116402a8ddebe66"
+          }
+        },
+        {
+          "client_id": "295343184937-v1hdtp72sekih0np2tprim6eoc8v7nj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuLDPIJlm5LSXGLhmjwVw3wvFXOe14CkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295343184937-v1hdtp72sekih0np2tprim6eoc8v7nj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
