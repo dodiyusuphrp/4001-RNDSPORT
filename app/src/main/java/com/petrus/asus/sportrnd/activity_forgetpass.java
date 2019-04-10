@@ -22,7 +22,7 @@ public class activity_forgetpass extends AppCompatActivity {
     private Button btnBack;
     private FirebaseAuth auth;
     private ProgressBar progressBar;
-    private ImageButton btnReset;
+    private Button btnReset;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
