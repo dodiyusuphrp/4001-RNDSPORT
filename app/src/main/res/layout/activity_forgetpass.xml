@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/login"
     tools:context=".activity_forgetpass">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="RESET PASSWORD"
             android:textStyle="bold"
-            android:textColor="#000000"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textAlignment="center"
             />
@@ -62,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/lbl_forgot_password"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="20dp" />
 
                 <TextView
@@ -71,7 +71,7 @@
                     android:gravity="center_horizontal"
                     android:padding="@dimen/activity_horizontal_margin"
                     android:text="@string/forgot_password_msg"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="14dp" />
 
                 <EditText
@@ -84,15 +84,15 @@
                     android:drawablePadding="10dp"
                     android:hint="EMAIL"
                     android:inputType="textEmailAddress"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/white"
                     android:padding="10dp"
-                    android:textColorHint="#606060"
+                    android:textColorHint="@color/abu"
                     android:textSize="14sp"
                     android:layout_marginRight="20dp" />
 
                 <Button
                     android:id="@+id/btn_reset_password"
-                    android:text="Terapkan"
+                    android:text="KIRIM"
                     android:textAlignment="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -125,12 +125,11 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center|bottom"
-                    android:layout_marginBottom="10dp"
                     android:visibility="gone" />
 
-                </LinearLayout>
-
             </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
