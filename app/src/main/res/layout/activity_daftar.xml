@@ -3,30 +3,48 @@
     xmlns:andriod="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/background_login"
+    android:background="@drawable/login"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background_login"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+        <TextView
+            android:id="@+id/tvdaftarnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DAFTAR AKUN"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginBottom="15dp"
+            android:textSize="20dp"
+            />
+        </android.support.design.widget.CoordinatorLayout>
         <android.support.design.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/addusername"
-                android:textColor="#ffff"
+                android:textColor="@color/black"
+                android:background="@drawable/button_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_username"
                 android:drawableLeft="@drawable/ic_username"
-                android:hint="Username" />
+                android:layout_marginBottom="10dp"
+
+                android:hint="Username"/>
         </android.support.design.widget.CoordinatorLayout>
 
         <android.support.design.widget.CoordinatorLayout
@@ -41,7 +59,9 @@
                 android:drawableStart="@drawable/ic_password"
                 android:drawableLeft="@drawable/ic_password"
                 android:hint="Password"
-                android:textColor="#ffff"
+                android:background="@drawable/button_layout"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
                 android:inputType="textPassword" />
         </android.support.design.widget.CoordinatorLayout>
 
@@ -51,7 +71,9 @@
 
             <EditText
                 android:id="@+id/addnamalengkap"
-                android:textColor="#ffff"
+                android:textColor="@color/black"
+                android:background="@drawable/button_layout"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_namalengkap"
@@ -66,7 +88,9 @@
 
             <EditText
                 android:id="@+id/addphone"
-                android:textColor="#ffff"
+                android:textColor="@color/black"
+                android:background="@drawable/button_layout"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_phone"
@@ -80,7 +104,9 @@
 
             <EditText
                 android:id="@+id/addmail"
-                android:textColor="#ffff"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_mail"
@@ -96,6 +122,7 @@
                 android:id="@+id/btnsave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_layout"
                 android:text="SAVE"
                 andriod:onClik="btnSave" />
         </android.support.design.widget.CoordinatorLayout>
