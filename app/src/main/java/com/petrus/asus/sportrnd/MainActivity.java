@@ -6,28 +6,27 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-///////////////////////
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+///////////////////////
 ///////////////////////
 
 public class MainActivity extends AppCompatActivity {
     public static final String MyPREFERENCES = "MyPrefs";
     private Button btnLogin;
-    private EditText username;
+    EditText username;
     private EditText password;
-
+    public static final String user="rndsportrnd";
+    String namaNya;
     ///////////////////////
     private FirebaseAuth firebaseAuth;
     /////////////////////////
@@ -42,21 +41,20 @@ public class MainActivity extends AppCompatActivity {
         ///////////////////////
         firebaseAuth = FirebaseAuth.getInstance();
         ///////////////////////
-
         btnLogin = findViewById(R.id.btnlogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String namaNya = username.getText().toString();
+                namaNya = username.getText().toString();
                 String passwordNya = password.getText().toString();
 
                 Log.d("USERNAME", namaNya);
                 Log.d("PASSWORD", passwordNya);
 
+
                 ///////////////////////
                 login(namaNya, passwordNya);
                 ///////////////////////
-
 //                if(namaNya.equals("rnd")&& passwordNya.equals("rnd")){
 //                    Intent next = new Intent(MainActivity.this, activity_halamanutama.class);
 //                    startActivity(next);
@@ -90,12 +88,14 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 e.printStackTrace();
+
                             }
                         });
                         if (task.isSuccessful()) {
-                            Intent intent = new Intent(MainActivity.this, activity_halamanutama.class);
-                            startActivity(intent);
-                            finish();
+                            Toast.makeText(MainActivity.this,"Login sukses", Toast.LENGTH_LONG).show();
+                            Intent i = new Intent(MainActivity.this,activity_menu.class);
+                            i.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
+                            startActivity(i);
                         } else {
 //                            task.getResult().toString();
                             Toast.makeText(MainActivity.this, "Gagal login", Toast.LENGTH_SHORT).show();
@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
+
 
     public void forget(View view) {
         Intent intent = new Intent(MainActivity.this, activity_forgetpass.class);
