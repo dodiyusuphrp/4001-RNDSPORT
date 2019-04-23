@@ -28,7 +28,7 @@ public class activity_menu extends AppCompatActivity
     Button bu2 = null;
     TextView tvEmail ;
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
