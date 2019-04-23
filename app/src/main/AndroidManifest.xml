@@ -35,10 +35,6 @@
 
         <activity android:name=".MapsActivity"/>
         <activity
-            android:name=".MainActivity"
-            android:label="Login"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".activity_splash"
             android:label="">
             <intent-filter>
@@ -48,30 +44,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity_daftar"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="" />
-        <activity
-            android:name=".activity_help"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="Help" />
-        <activity
-            android:name=".Aboutactivity"
-            android:label="About" />
-        <activity
-            android:name=".activity_lapangan"
-            android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity
             android:name=".activity_forgetpass"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="" />
-        <activity
-            android:name=".activity_football"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="Futsal" />
-        <activity android:name=".activity_basket" />
-        <activity android:name=".PesanActivity" />
-        <activity android:name=".activity_setting" />
     </application>
 
 </manifest>
