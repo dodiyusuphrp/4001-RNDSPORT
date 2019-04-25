@@ -25,17 +25,19 @@ public class activity_basket extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basket);
     }
-    public void rajawali(View view) {
-        Intent intent = new Intent(activity_basket.this, activity_menu.class);
+
+    public void reksana(View view) {
+        Intent intent = new Intent(activity_basket.this, PesanActivity.class);
         startActivity(intent);
     }
 
-    public void reksana(View view) {
-    }
-
     public void saksama(View view) {
+        Intent intent = new Intent(activity_basket.this, PesanActivity.class);
+        startActivity(intent);
     }
 
     public void antabaru(View view) {
+        Intent intent = new Intent(activity_basket.this, PesanActivity.class);
+        startActivity(intent);
     }
 }

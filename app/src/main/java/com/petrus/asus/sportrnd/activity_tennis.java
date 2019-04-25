@@ -1,8 +1,10 @@
 package com.petrus.asus.sportrnd;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class activity_tennis extends AppCompatActivity {
     private static final String PREFS_NAME = "prefs";
@@ -24,5 +26,20 @@ public class activity_tennis extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tennis);
 
+    }
+
+    public void tennis1(View view) {
+        Intent intent = new Intent(activity_tennis.this, PesanActivity.class);
+        startActivity(intent);
+    }
+
+    public void tennis2(View view) {
+        Intent intent = new Intent(activity_tennis.this, PesanActivity.class);
+        startActivity(intent);
+    }
+
+    public void tennis3(View view) {
+        Intent intent = new Intent(activity_tennis.this, PesanActivity.class);
+        startActivity(intent);
     }
 }

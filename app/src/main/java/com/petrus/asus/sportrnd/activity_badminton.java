@@ -1,8 +1,10 @@
 package com.petrus.asus.sportrnd;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class activity_badminton extends AppCompatActivity {
     private static final String PREFS_NAME = "prefs";
@@ -23,5 +25,20 @@ public class activity_badminton extends AppCompatActivity {
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_badminton);
+    }
+
+    public void badminton1(View view) {
+        Intent intent = new Intent(activity_badminton.this, PesanActivity.class);
+        startActivity(intent);
+    }
+
+    public void badminton2(View view) {
+        Intent intent = new Intent(activity_badminton.this, PesanActivity.class);
+        startActivity(intent);
+    }
+
+    public void badminton3(View view) {
+        Intent intent = new Intent(activity_badminton.this, PesanActivity.class);
+        startActivity(intent);
     }
 }
