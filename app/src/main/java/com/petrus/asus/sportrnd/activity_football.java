@@ -9,7 +9,8 @@ import android.view.View;
 public class activity_football extends AppCompatActivity {
     private static final String PREFS_NAME = "prefs";
     private static final String PREF_DARK_THEME = "dark_theme";
-    private static final String PREF_FONT_LARGE = "font_large" ;
+    private static final String PREF_FONT_LARGE = "font_large";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
@@ -25,26 +26,19 @@ public class activity_football extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_football);
     }
+
     public void rajawali(View view) {
         Intent intent = new Intent(activity_football.this, PesanActivity.class);
         startActivity(intent);
     }
 
-    public void badminton1(View view) {
+    public void Score(View view) {
+        Intent intent = new Intent(activity_football.this, PesanActivity.class);
+        startActivity(intent);
     }
 
-    public void tennis1(View view) {
-    }
-
-    public void badminton2(View view) {
-    }
-
-    public void badminton3(View view) {
-    }
-
-    public void tennis2(View view) {
-    }
-
-    public void tennis3(View view) {
+    public void Galeri(View view) {
+        Intent intent = new Intent(activity_football.this, PesanActivity.class);
+        startActivity(intent);
     }
 }
