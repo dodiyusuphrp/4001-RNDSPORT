@@ -16,15 +16,15 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:id="@+id/txtnama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
                 android:text="Nama :  "
                 android:textStyle="bold"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtnama"
+                android:id="@+id/namapelanggan"
                 android:text="" />
         </LinearLayout>
 
@@ -39,6 +39,7 @@
                 android:onClick="setDate"
                 android:padding="5dp"
                 android:text="Pilih Tanggal"
+                android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
 
             <TextView
@@ -46,6 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="setTime"
+                android:textColor="@color/colorPrimary"
                 android:padding="5dp"
                 android:text="Pilih Waktu" />
         </LinearLayout>
@@ -58,12 +60,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Uang Muka : Rp "
+                android:textColor="@color/colorPrimary"
+                android:text="Harga: Rp  "
                 android:textStyle="bold"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/uangmuka"
+                android:id="@+id/harga"
                 android:text=""
                 android:inputType="number"
                 android:layout_marginBottom="8dp" />
@@ -75,12 +78,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Harga: Rp  "
+                android:text="Uang Bayar: Rp  "
+                android:textColor="@color/colorPrimary"
                 android:textStyle="bold"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/harga"
+                android:id="@+id/uangbayar"
                 android:text=""
                 android:inputType="number"/>
         </LinearLayout>
@@ -93,6 +97,77 @@
             android:background="@color/colorPrimary"
             android:textStyle="bold"
             android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama:  "
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/customer"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal:  "
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/date"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam:  "
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/time"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Harga:  "
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/total"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uang Kembali: "
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/sisa"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tombol2"
+                android:text="KONFIRMASI"
+                android:textAlignment="center"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tombol3"
+                android:text="KELUAR"
+                android:textAlignment="center"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"/>
+        </LinearLayout>
 
     </LinearLayout>
 
