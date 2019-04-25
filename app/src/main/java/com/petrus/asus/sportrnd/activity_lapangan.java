@@ -1,12 +1,10 @@
 package com.petrus.asus.sportrnd;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
-public class activity_football extends AppCompatActivity {
+public class activity_lapangan extends AppCompatActivity{
     private static final String PREFS_NAME = "prefs";
     private static final String PREF_DARK_THEME = "dark_theme";
     private static final String PREF_FONT_LARGE = "font_large" ;
@@ -23,28 +21,6 @@ public class activity_football extends AppCompatActivity {
             setTheme(R.style.AppTheme_FontLarge);
         }
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_football);
-    }
-    public void rajawali(View view) {
-        Intent intent = new Intent(activity_football.this, PesanActivity.class);
-        startActivity(intent);
-    }
-
-    public void badminton1(View view) {
-    }
-
-    public void tennis1(View view) {
-    }
-
-    public void badminton2(View view) {
-    }
-
-    public void badminton3(View view) {
-    }
-
-    public void tennis2(View view) {
-    }
-
-    public void tennis3(View view) {
+        setContentView(R.layout.activity_help);
     }
 }

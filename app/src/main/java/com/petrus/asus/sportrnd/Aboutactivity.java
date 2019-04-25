@@ -1,17 +1,15 @@
 package com.petrus.asus.sportrnd;
-
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
-public class activity_football extends AppCompatActivity {
+public class Aboutactivity extends AppCompatActivity {
     private static final String PREFS_NAME = "prefs";
     private static final String PREF_DARK_THEME = "dark_theme";
     private static final String PREF_FONT_LARGE = "font_large" ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         boolean theme = preferences.getBoolean(PREF_DARK_THEME, false);
         boolean font = preferences.getBoolean(PREF_FONT_LARGE, false);
@@ -22,29 +20,7 @@ public class activity_football extends AppCompatActivity {
         } else if (font) {
             setTheme(R.style.AppTheme_FontLarge);
         }
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_football);
-    }
-    public void rajawali(View view) {
-        Intent intent = new Intent(activity_football.this, PesanActivity.class);
-        startActivity(intent);
-    }
-
-    public void badminton1(View view) {
-    }
-
-    public void tennis1(View view) {
-    }
-
-    public void badminton2(View view) {
-    }
-
-    public void badminton3(View view) {
-    }
-
-    public void tennis2(View view) {
-    }
-
-    public void tennis3(View view) {
+        setContentView(R.layout.activity_about);
     }
 }
+
