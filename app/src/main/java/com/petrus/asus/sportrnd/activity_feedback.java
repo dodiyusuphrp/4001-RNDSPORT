@@ -20,7 +20,7 @@ public class activity_feedback extends AppCompatActivity {
     Button send_feedback,feedback_detail;
     private DatabaseReference mDatabase;
    // Firebase firebase;
-
+//mantap
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
