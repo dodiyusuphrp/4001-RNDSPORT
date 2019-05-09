@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.firebase.client.Firebase;
-import com.firebase.client.Firebase;
+//import com.firebase.client.Firebase;
+//import com.firebase.client.Firebase;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -19,7 +19,7 @@ public class activity_feedback extends AppCompatActivity {
     EditText namedata,emaildata,messagedata;
     Button send_feedback,feedback_detail;
     private DatabaseReference mDatabase;
-    Firebase firebase;
+   // Firebase firebase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +31,12 @@ public class activity_feedback extends AppCompatActivity {
 
         send_feedback = findViewById(R.id.send_feedback);
         feedback_detail = findViewById(R.id.feedback_detail);
-        Firebase.setAndroidContext(this);
+        //Firebase.setAndroidContext(this);
         mDatabase = FirebaseDatabase.getInstance().getReference();
         String UniqueID =
                 Settings.Secure.getString(getApplicationContext().getContentResolver(),
                         Settings.Secure.ANDROID_ID);
-        firebase= new Firebase("https://sportrnd-83f09.firebaseio.com"+UniqueID);
+       // firebase= new Firebase("https://sportrnd-83f09.firebaseio.com"+UniqueID);
         send_feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
