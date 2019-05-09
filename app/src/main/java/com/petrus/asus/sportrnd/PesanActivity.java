@@ -3,6 +3,7 @@ package com.petrus.asus.sportrnd;
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,11 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Calendar;
 
@@ -35,6 +41,18 @@ public class PesanActivity extends AppCompatActivity {
     private static final String PREFS_NAME = "prefs";
     private static final String PREF_DARK_THEME = "dark_theme";
     private static final String PREF_FONT_LARGE = "font_large" ;
+    private DatabaseReference mDatabase;
+
+
+    String namapelanggan;
+    String pilihtanggal;
+    String pilihwaktu;
+    String harga;
+    String uangbayar;
+
+    int h;
+    int ub;
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +69,7 @@ public class PesanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pesan);
 
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         edtnama = (EditText) findViewById(R.id.namapelanggan);
         edtuangmuka = (EditText) findViewById(R.id.uangbayar);
@@ -75,18 +94,18 @@ public class PesanActivity extends AppCompatActivity {
         btnproses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String namapelanggan = edtnama.getText().toString().trim();
-                String pilihtanggal = tanggal.getText().toString().trim();
-                String pilihwaktu = waktu.getText().toString().trim();
-                String harga = edtharga.getText().toString().trim();
-                String uangbayar = txtuangbayar.getText().toString().trim();
-
-                double h = Double.parseDouble(harga);
-                double ub = Double.parseDouble(uangbayar);
+                namapelanggan = edtnama.getText().toString().trim();
+                pilihtanggal = tanggal.getText().toString().trim();
+                pilihwaktu = waktu.getText().toString().trim();
+                harga = edtharga.getText().toString().trim();
+                uangbayar = txtuangbayar.getText().toString().trim();
+                h = Integer.parseInt(harga);
+                ub = Integer.parseInt(uangbayar);
                 double total = (h - ub);
-                txtname.setText("Nama Pelanggan : " );
-                txttanggal.setText("Tanggal : " );
-                txtwaktu.setText("Jam : ");
+                txtname.setText("Nama Pelanggan : " + namapelanggan );
+                txttanggal.setText("Tanggal : " + pilihtanggal );
+                txtwaktu.setText("Jam : " + pilihwaktu);
+                txttotal.setText("Harga : " + h);
                 txtkembalian.setText("Sisa Kembalian : " + total);
             }
         });
@@ -95,7 +114,16 @@ public class PesanActivity extends AppCompatActivity {
         btnkonfirmasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Transaksi transaksi = new Transaksi(namapelanggan, pilihtanggal, pilihwaktu, h, ub);
+                mDatabase.child("transaksi").push().setValue(transaksi).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(PesanActivity.this, "Sukses menambahkan transaksi", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(PesanActivity.this, activity_feedback.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
             }
         });
 
@@ -106,7 +134,6 @@ public class PesanActivity extends AppCompatActivity {
             }
         });
     }
-
     public void setTime(final View view) {
         tpd = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
             @Override
